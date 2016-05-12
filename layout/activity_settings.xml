@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/shroomz_pelitausta"
+    android:paddingLeft="60dp"
+    android:paddingRight="60dp">
+
+    <TextView
+        android:text="OFF"
+        android:layout_alignParentRight="true"
+        android:id="@+id/music_switch_indicator_textview"
+        android:layout_marginTop="151dp"
+        android:textColor="#b7f940"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <Switch
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Toggle in game music Off/On"
+        android:textColor="#b7f940"
+        android:id="@+id/music_switch"
+        android:switchPadding="39.5dp"
+        android:layout_below="@id/music_switch_indicator_textview"
+        android:layout_centerHorizontal="true" />
+
+    <TextView
+        android:text="OFF"
+        android:textColor="#b7f940"
+        android:id="@+id/vibrator_switch_indicator_textview"
+        android:layout_below="@+id/music_switch"
+        android:layout_alignParentRight="true"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+    <Switch
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Toggle vibration of buttons Off/On"
+        android:textColor="#b7f940"
+        android:id="@+id/vibration_switch"
+        android:switchPadding="10dp"
+        android:layout_below="@+id/vibrator_switch_indicator_textview"/>
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/settings_header"
+        android:background="@drawable/shroomz_title_settings_v1"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true" />
+
+    <ImageButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/return_settings"
+        android:onClick="onReturnButtonClick"
+        android:background="@drawable/shroomz_returnbutton"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="5dp" />
+
+</RelativeLayout>

@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainMenuActivity"
+    android:background="@drawable/shroomz_menuscreen">
+
+
+    <ImageButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/settings_button"
+        android:background="@drawable/shroomz_settings_v2"
+        android:onClick="onSettingsButtonClick"
+        android:layout_marginBottom="15dp"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true" />
+
+    <ImageButton
+        android:id="@+id/howtoplay_button"
+        android:layout_above="@+id/settings_button"
+        android:layout_centerHorizontal="true"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/shroomz_howtoplay_v2"
+        android:onClick="onHowToPlayButtonClick" />
+
+    <ImageButton
+        android:id="@+id/newgame_button"
+        android:layout_above="@id/howtoplay_button"
+        android:layout_centerHorizontal="true"
+        android:background="@drawable/shroomz_newgame_v2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:onClick="onNewGameButtonClick"/>
+
+    <ImageButton
+        android:id="@+id/trophy_imagebutton"
+        android:layout_width="100dp"
+        android:layout_height="90dp"
+        android:background="@drawable/shroomz_trophygobletwtf"
+        android:onClick="onTrophyButtonClick"
+        android:layout_alignBottom="@+id/settings_button"
+        android:layout_toRightOf="@+id/settings_button"
+        android:layout_toEndOf="@+id/settings_button" />
+
+</RelativeLayout>
